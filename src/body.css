@@ -1,0 +1,114 @@
+.body{
+    width: 100%;
+    height: 800px; 
+    text-align: center;
+    border: 5px solid green;
+    display: flex; 
+    padding-left: 11%;
+}
+
+.posts{
+    border: 5px solid orange;
+    height: 800px;
+    width: 50%;
+}
+
+.right_panel{
+    width: 26%;
+}
+
+.right_panel_upper{
+    border: 5px solid yellow;
+    height: 400px;
+    width: 100%;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+}
+.login_form_part{
+    margin: 8px 40px 8px 40px;
+    padding: 10px;
+}
+
+.login_form_part_btn{
+    margin: 8px 40px 8px 40px;
+    padding: 10px;
+    background-color: blue;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.wrap_divide_line{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.divide_line{
+    border: 1px solid #ccc;
+    width: 35%;
+}
+
+.divide_line_text{
+    color: #ccc;
+}
+
+.social_login_panel{
+    display: flex;
+    flex-direction: column;
+}
+
+.social_Google_login_btn{
+    margin: 8px 40px 8px 40px;
+    padding: 10px;
+    cursor: pointer;
+    background-image: url('./img/google_btn_logo.png');
+    background-size: cover;
+    background-position: 1%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid #ccc;
+}
+
+.social_Facebook_login_btn{
+    margin: 8px 40px 8px 40px;
+    padding: 10px;
+    cursor: pointer;
+    background-image: url('./img/Facebook_btn_logo.png');
+    background-size: cover;
+    background-position: 3%;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-color: #3a5897;
+    font-weight: bold;
+    color: white;
+    border: 2px solid #3a5897;
+}
+
+.social_Kakao_login_btn{
+    margin: 8px 40px 8px 40px;
+    padding: 10px;
+    cursor: pointer;
+    background-image: url('./img/Kakao_btn_logo.png');
+    background-size: cover;
+    background-position: 2%;
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-color: #FEE500;
+    font-weight: bold;
+    border: 2px solid #FEE500;
+}
+
+.real_time_searching_word{
+    border: 5px solid darkmagenta;
+    height: 380px;
+    width: 100%;
+}

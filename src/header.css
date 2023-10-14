@@ -1,0 +1,67 @@
+.header{ 
+    width: 100%;
+    height: 200px; 
+    border: 5px solid red;
+ }
+
+.search_header{
+    width: 75%;
+    height: 140px;
+    border: 3px solid black;
+    margin: auto;
+    position: relative;
+}
+
+.community_logo{
+    
+}
+
+.searchbar{
+    width: 350px;    
+    height: 44px;
+    border: 4px solid blue;
+    padding-left: 10px;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -25px;
+}
+
+.searchbtn{
+    width: 54px;
+    cursor: pointer;
+    height: 54px;    
+    border: 4px solid blue;
+    background-color: blue;
+    background-image: url('./img/search_btn_img.png');
+    background-size: cover;
+    background-position: center;
+    background-size: 36px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 170px;
+    margin-top: -25px;    
+}
+
+.navbar{
+    width: 100%;
+    background-color: blue;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 12.5%;
+}
+
+ .navMenu{
+    text-decoration: none;
+    color: white;
+    border: 3px solid black;
+    font-weight: bold;
+    font-style: normal;
+    margin-right: 8px;
+    font-size: 20px;
+ }
