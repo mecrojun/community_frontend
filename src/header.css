@@ -12,10 +12,6 @@
     position: relative;
 }
 
-.community_logo{
-    
-}
-
 .searchbar{
     width: 350px;    
     height: 44px;
@@ -43,7 +39,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: 170px;
+    margin-left: 168px;
     margin-top: -25px;    
 }
 

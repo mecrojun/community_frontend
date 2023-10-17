@@ -25,16 +25,22 @@
 
 .login_form{
     display: flex;
+    justify-content: center;
+}
+
+form.login_form > div.input_info{
+    display: flex;
     flex-direction: column;
 }
-.login_form_part{
-    margin: 8px 40px 8px 40px;
+
+form.login_form > div.input_info > input{
+    margin: 5px;
     padding: 10px;
 }
 
-.login_form_part_btn{
-    margin: 8px 40px 8px 40px;
-    padding: 10px;
+.login_form_btn{
+    margin: 5px;
+    padding: 10px 20px 10px 20px;
     background-color: blue;
     cursor: pointer;
     border: none;
@@ -42,6 +48,13 @@
     font-weight: bold;
     font-style: normal;
     font-size: 15px;
+}
+
+div.find_info_or_register > a{
+    text-decoration: none;
+    margin: 8px 10px 8px 10px;
+    color: gray;
+    font-size: 12px;
 }
 
 .wrap_divide_line{

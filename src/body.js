@@ -1,6 +1,10 @@
 import './body.css';
 
 function Body() {
+    function userLogin(){
+      console.log("로그인");
+    }
+
     return (
       <div className="body">
         <div className='posts'>
@@ -9,10 +13,18 @@ function Body() {
         <div className='right_panel'>
           <div className='right_panel_upper'>
             <form className='login_form'>
-              <input className='login_form_part' type='text' placeholder='아이디'></input>
-              <input className='login_form_part' type='password' placeholder='비밀번호'></input>
-              <input className='login_form_part_btn' type='submit' value='로그인'></input>
+              <div className='input_info'>
+                <input type='text' placeholder='아이디'></input>
+                <input type='password' placeholder='비밀번호'></input>
+              </div>
+              <input className='login_form_btn' type='submit' value='로그인' onClick={userLogin}></input>
             </form>
+
+            <div className='find_info_or_register'>
+              <a href='#!'>아이디찾기</a>
+              <a href='#!'>비밀번호찾기</a>
+              <a href='/register'>회원가입</a>
+            </div>
 
             <div class="wrap_divide_line">
               <hr class="divide_line"></hr>

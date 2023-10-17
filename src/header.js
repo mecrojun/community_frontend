@@ -11,7 +11,7 @@ function Header() {
         </form>
       </div>
       <div className='navbar'>
-        <Link className='navMenu' to={'/'}>게시판</Link>
+        <Link className='navMenu' to={'/post'}>게시판</Link>
         <Link className='navMenu' to={'/'}>공지사항</Link>
         <Link className='navMenu' to={'/'}>Q&A</Link>
       </div>
