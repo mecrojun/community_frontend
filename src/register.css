@@ -76,6 +76,27 @@ div.register_form > div.email_check > button{
     cursor: pointer;
 }
 
+div.register_form > div.check_validCode_part{
+    margin-bottom: 20px;
+    display: none;
+}
+
+div.register_form > div.check_validCode_part > input{
+    width: 30%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+div.register_form > div.check_validCode_part > button{
+    margin-left: 15px;
+    padding: 15px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 div.register_form > button{
     width: 82.5%;
     padding: 15px;

@@ -6,7 +6,7 @@ import Post from "./post";
 
 function App() {
   return (
-    <div>
+    <div className="app_div">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

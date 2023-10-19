@@ -6,7 +6,7 @@ function Header() {
     <div className="header">
       <div className='search_header'>        
         <form>
-          <input className='searchbar' type='text' placeholder='검색어 입력'></input>
+          <input className='searchbar' type='text' name='search' placeholder='검색어 입력'></input>
           <button className='searchbtn'></button>
         </form>
       </div>
