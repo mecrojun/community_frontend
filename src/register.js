@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom';
 import './register.css';
 
 function Register() {
+    const moveHome = useNavigate();
     let email;
     let isCheckedValidCode;
 
@@ -23,7 +25,7 @@ function Register() {
         return;
       }
 
-      fetch("http://127.0.0.1:4000/users/create/user/email", {
+      fetch(`${process.env.REACT_APP_URL}/users/create/user/email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,6 +38,8 @@ function Register() {
       })
         .then((response) => response.json())
         .then((data) => console.log(data))
+
+      moveHome('/');
     }
 
     function receiveCode(){
@@ -44,8 +48,8 @@ function Register() {
       email = front_email_part + "@" + back_email_part;
 
       isCheckedValidCode = false;
-
-      fetch("http://127.0.0.1:4000/users/create/user/send/code/email?email=" + email)
+      
+      fetch(`${process.env.REACT_APP_URL}/users/create/user/send/code/email?email=` + email)
       .then((response) => response.json())
       .then(isReceiveTrue => {
           if(isReceiveTrue.result)
@@ -56,8 +60,8 @@ function Register() {
 
     function check_validCode(){
       const validCode = document.getElementById('input_validCode').value;
-
-      fetch("http://127.0.0.1:4000/users/create/user/verify/code/email", {
+      
+      fetch(`${process.env.REACT_APP_URL}/users/create/user/verify/code/email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
