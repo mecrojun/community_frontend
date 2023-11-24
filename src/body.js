@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { removeCookie } from './cookie';
 import './body.css';
 import UserLoginPage from './userLoginPage';
 import UserProfile from './userProfile';
@@ -6,7 +7,7 @@ import UserProfile from './userProfile';
 function Body() {
     const [IsLogined, setIsLogined] = useState(false);
     const LoginSuccess = () => { setIsLogined(true); }
-    const Logout = () => { setIsLogined(false); }
+    const Logout = () => { setIsLogined(false); removeCookie("token"); }
 
     return (
       <div className="body">

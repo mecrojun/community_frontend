@@ -1,0 +1,25 @@
+.post_div{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createPostBtn{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+}
+
+.postTable{
+    border: 1px solid black;
+    text-align: center;
+    margin: 2px 5px 5px 2px;
+}
+
+.postTable > tr > td.clickTD:hover{
+    cursor: pointer;
+}

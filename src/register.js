@@ -72,7 +72,10 @@ function Register() {
         }),
       })
         .then((response) => response.json())
-        .then((data) => { isCheckedValidCode = data.result; });
+        .then((data) => { 
+          isCheckedValidCode = data.result;
+          alert("인증이 확인되었습니다"); 
+        });
     }
 
     return (

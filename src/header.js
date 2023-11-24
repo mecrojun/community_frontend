@@ -1,7 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './header.css';
 
+
+export let postListData;
+
 function Header() {
+  const movePage = useNavigate();
+
+  const test = async() => {
+    await fetch(`${process.env.REACT_APP_URL}/post-article?skip=0&take=10`)
+    .then((response) => response.json())
+    .then((data) => { 
+      postListData = data.result;
+      movePage('/post'); 
+    })
+  }
+
   return (
     <div className="header">
       <div className='search_header'>        
@@ -11,7 +25,7 @@ function Header() {
         </form>
       </div>
       <div className='navbar'>
-        <Link className='navMenu' to={'/post'}>게시판</Link>
+        <text className='navMenu' onClick={ test }>게시판</text>
         <Link className='navMenu' to={'/'}>공지사항</Link>
         <Link className='navMenu' to={'/'}>Q&A</Link>
       </div>

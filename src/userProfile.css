@@ -1,0 +1,10 @@
+.UserProfile{
+    border: 5px solid yellow;
+    height: 400px;
+    width: 100%;
+}
+
+div.UserProfile > .myInfo_btn{
+    text-decoration: none;
+    color: black;
+}

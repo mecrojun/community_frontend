@@ -1,13 +1,17 @@
 import './userLoginPage.css';
+import { setCookie, getCookie } from './cookie';
 
 function UserLoginPage({ LoginSuccess }) {
   let UserToken=""; //undefined면 로그인이 안되었다는 것으로
+
+  if( getCookie("token") != undefined )
+      LoginSuccess();
 
   function userLogin(){
     const id = document.getElementById('id').value;
     const pd = document.getElementById('password').value;
 
-    fetch("http://127.0.0.1:4000/users/nickname/login", {
+    fetch(`${process.env.REACT_APP_URL}/users/nickname/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -20,8 +24,10 @@ function UserLoginPage({ LoginSuccess }) {
         .then((response) => response.json())
         .then((data) => 
         { UserToken = data.result; 
-          if( UserToken != undefined )
+          if( UserToken != undefined ) {
+            setCookie("token", UserToken, { path: "/" });
             LoginSuccess();
+          }
           else
             window.confirm("아이디 또는 비밀번호를 확인해 주세요"); })
   }
