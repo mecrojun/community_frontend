@@ -1,2 +1,2 @@
 # community_frontend
-corworking project
+게시판, 댓글, 로그인, 회원가입 같은 기능은 백엔드 개발자분의 restAPI 서버에 데이터를 저장하거나 불러오는 형식으로 만들었습니다
